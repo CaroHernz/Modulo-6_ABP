@@ -150,6 +150,7 @@
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
+
 import { ref, onMounted, onUnmounted, computed } from 'vue';
 
 const isCollapsed = ref(false);
@@ -185,10 +186,10 @@ const drawerImage = computed(() =>
     width: 60px !important;
 }
 
-.no-truncate .v-list-item-title {
+.no-truncate :deep(.v-list-item-title) {
     white-space: normal !important;
     overflow: visible !important;
-    text-overflow: initial !important;
+    text-overflow: unset !important;
 }
 
 .hamburger-btn {

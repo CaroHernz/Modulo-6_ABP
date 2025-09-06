@@ -1,29 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/Home.vue'
-import ABP1 from '@/views/ABP1.vue'
-import ABP2 from '@/views/ABP2.vue'
-import ABP3 from '@/views/ABP3.vue'
+import HomeView from '../views/HomeView.vue'
+import ABP1View from '../views/ABP1View.vue'
+import ABP2View from '../views/ABP2View.vue'
+import ABP3View from '../views/ABP3View.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: HomeView
   },
   {
     path: '/abp1',
     name: 'abp1',
-    component: ABP1
+    component: ABP1View
   },
   {
     path: '/abp2',
     name: 'abp2',
-    component: ABP2
+    component: ABP2View
   },
   {
     path: '/abp3',
     name: 'abp3',
-    component: ABP3
+    component: ABP3View
   }
 ]
 

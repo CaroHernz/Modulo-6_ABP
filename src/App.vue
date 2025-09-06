@@ -1,9 +1,13 @@
-<script setup>
+<script>
 import AppNavBar from './components/AppNavBar.vue'
 import AppFooter from './components/AppFooter.vue'
-import { ref } from 'vue'
-
-
+export default {
+  name: 'App',
+  components: {
+    AppNavBar,
+    AppFooter
+  }
+}
 </script>
 
 <template>
