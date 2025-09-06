@@ -18,25 +18,33 @@
                 <v-divider></v-divider>
 
                 <v-list nav dense>
+                    <v-list-item value="home" 
+                    :class="{'nav-active': $route.name === 'home'}"
+                    @click="$router.push('/')">
+                        <div class="nav-item-content">
+                            <i class="fas fa-home me-3"></i>
+                            <span class="nav-item-text">Home</span>
+                        </div>
+                    </v-list-item>
                     <v-list-item value="abp1" 
-                    :class="{'nav-active': activeItem === 'abp1'}"
-                    @click="$emit('select-component', 'abp1')">
+                    :class="{'nav-active': $route.name === 'abp1'}"
+                    @click="$router.push('/abp1')">
                         <div class="nav-item-content">
                             <i class="fas fa-paper-plane me-3"></i>
                             <span class="nav-item-text">ABP1</span>
                         </div>
                     </v-list-item>
                     <v-list-item value="abp2"
-                    :class="{'nav-active': activeItem === 'abp2'}"
-                    @click="$emit('select-component', 'abp2')">
+                    :class="{'nav-active': $route.name === 'abp2'}"
+                    @click="$router.push('/abp2')">
                         <div class="nav-item-content">
                             <i class="fas fa-paper-plane me-3"></i>
                             <span class="nav-item-text">ABP2</span>
                         </div>
                     </v-list-item>
                     <v-list-item value="abp3"
-                    :class="{'nav-active': activeItem === 'abp3'}"
-                    @click="$emit('select-component', 'abp3')">
+                    :class="{'nav-active': $route.name === 'abp3'}"
+                    @click="$router.push('/abp3')">
                         <div class="nav-item-content">
                             <i class="fas fa-paper-plane me-3"></i>
                             <span class="nav-item-text">ABP3</span>
@@ -61,7 +69,7 @@
                             </a></v-btn>
                     </v-col>
                     <v-col class="text-center pt-1">
-                        <small>2025 Carolina Hernández Barra</small>
+                        <small>© 2025 Carolina Hernández Barra</small>
                     </v-col>
                 </template>
             </v-navigation-drawer>
@@ -78,25 +86,33 @@
             <v-divider></v-divider>
 
             <v-list nav dense :class="{ 'collapsed': isCollapsed }">
+                <v-list-item value="home" 
+                    :class="{'nav-active': $route.name === 'home'}"
+                    @click="$router.push('/')">
+                        <div class="nav-item-content">
+                            <i class="fas fa-home me-3"></i>
+                            <span class="nav-item-text">Home</span>
+                        </div>
+                    </v-list-item>
                 <v-list-item value="abp1"
-                :class="{'nav-active': activeItem === 'abp1'}"
-                    @click="$emit('select-component', 'abp1')">
+                :class="{'nav-active': $route.name === 'abp1'}"
+                    @click="$router.push('/abp1')">
                     <div class="nav-item-content">
                         <i class="fas fa-paper-plane me-3"></i>
                         <span class="nav-item-text">ABP1</span>
                     </div>
                 </v-list-item>
                 <v-list-item value="abp2"
-                :class="{'nav-active': activeItem === 'abp2'}"
-                    @click="$emit('select-component', 'abp2')">
+                :class="{'nav-active': $route.name === 'abp2'}"
+                    @click="$router.push('/abp2')">
                     <div class="nav-item-content">
                         <i class="fas fa-paper-plane me-3"></i>
                         <span class="nav-item-text">ABP2</span>
                     </div>
                 </v-list-item>
                 <v-list-item value="abp3"
-                :class="{'nav-active': activeItem === 'abp3'}"
-                    @click="$emit('select-component', 'abp3')">
+                :class="{'nav-active': $route.name === 'abp3'}"
+                    @click="$router.push('/abp3')">
                     <div class="nav-item-content">
                         <i class="fas fa-paper-plane me-3"></i>
                         <span class="nav-item-text">ABP3</span>
@@ -124,13 +140,16 @@
                         </a></v-btn>
                 </v-col>
                 <v-col class="text-center pt-1">
-                    <small>2025 Carolina Hernández Barra</small>
+                    <small>© 2025 Carolina Hernández Barra</small>
                 </v-col>
             </template>
         </v-navigation-drawer>
     </div>
 </template>
 <script setup>
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
 import { ref, onMounted, onUnmounted, computed } from 'vue';
 
 const isCollapsed = ref(false);
