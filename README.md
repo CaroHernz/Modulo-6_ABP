@@ -56,7 +56,7 @@ npm run build
 
 <a name="actividad1">
 
-## Actividad Práctica 1: Intrudicción al Framework VueJS</a>
+## Actividad Práctica 1: Introducción al Framework VueJS</a>
 #### Aprendizaje esperado:
 Describir los aspectos fundamentales de un framework orientado a componentes para el desarrollo de una aplicación Front-End
 
@@ -100,4 +100,5 @@ descripción.
   <a href="https://github.com/CaroHernz">Carolina Hernández</a>
 </p>
 <div align="center"> ¡Si te gusta este proyecto, no olvides darle una ⭐! </div>
+
 
