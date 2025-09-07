@@ -56,7 +56,7 @@ npm run build
 
 <a name="actividad1">
 
-## Actividad Práctica 1: Intrudicciçon al Framework VueJS</a>
+## Actividad Práctica 1: Intrudicción al Framework VueJS</a>
 #### Aprendizaje esperado:
 Describir los aspectos fundamentales de un framework orientado a componentes para el desarrollo de una aplicación Front-End
 
@@ -75,8 +75,29 @@ Este mini proyecto, consiste en mostrar una tabla de usuarios, en donde deberás
 - Si utilizas arreglos y objetos en las variables dentro de la `data` de la instancia de Vue, serán menos líneas de programación
 
 ----
+
+<a name="actividad2">
+
+## Actividad Práctica 2: Templates y rendering en Vue</a>
+#### Aprendizaje esperado:
+Utilizar la sintaxis de templates de Vuex para el despliegue de valores y variables que den solución a un requerimiento
+
+### Actividad: 
+Para continuar con nuestro aprendizaje con Vue JS, debemos realizar la siguiente aplicación.
+Queremos mostrar una lista de personajes ficticios con un nombre y
+descripción.
+  
+### 🛠️ Requerimientos:
+- Utilizar Vue y sus directivas
+- Crear una estructura Vue
+- Usar un arreglo que recorra (nombre, descripción)
+- Los datos deberan estar definidos en un objeto
+
+----
+
 #### Creado por
 <p align="center"> 
   <a href="https://github.com/CaroHernz">Carolina Hernández</a>
 </p>
 <div align="center"> ¡Si te gusta este proyecto, no olvides darle una ⭐! </div>
+
