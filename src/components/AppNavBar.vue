@@ -50,6 +50,14 @@
                             <span class="nav-item-text">ABP3</span>
                         </div>
                     </v-list-item>
+                    <v-list-item value="abp3"
+                    :class="{'nav-active': $route.name === 'abp4'}"
+                    @click="$router.push('/abp4')">
+                        <div class="nav-item-content">
+                            <i class="fas fa-paper-plane me-3"></i>
+                            <span class="nav-item-text">ABP4</span>
+                        </div>
+                    </v-list-item>
                 </v-list>
                 <template v-slot:append>
                     <v-divider></v-divider>
@@ -118,6 +126,14 @@
                         <span class="nav-item-text">ABP3</span>
                     </div>
                 </v-list-item>
+                <v-list-item value="abp3"
+                    :class="{'nav-active': $route.name === 'abp4'}"
+                    @click="$router.push('/abp4')">
+                        <div class="nav-item-content">
+                            <i class="fas fa-paper-plane me-3"></i>
+                            <span class="nav-item-text">ABP4</span>
+                        </div>
+                    </v-list-item>
             </v-list>
 
             <v-divider></v-divider>
