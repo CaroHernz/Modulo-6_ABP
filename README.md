@@ -7,7 +7,9 @@
 <p align="center"> 
   <a href="#actividad1">Actividad 1</a> | 
 	<a href="#actividad2">Actividad 2</a> | 
-	<a href="#actividad3">Actividad 3</a> 
+	<a href="#actividad3">Actividad 3</a> |
+	<a href="#actividad4">Actividad 4</a> 
+
 </p>
 
 -----
@@ -73,6 +75,99 @@ Este mini proyecto, consiste en mostrar una tabla de usuarios, en donde deberás
 - Utiliza bootstrap para darle estilo a la tabla.
 - Todos estos datos deben estar almacenados en la data de la instancia de VueJS y ser renderizados en la tabla directamente.
 - Si utilizas arreglos y objetos en las variables dentro de la `data` de la instancia de Vue, serán menos líneas de programación
+
+----
+
+<a name="actividad2">
+
+## Actividad Práctica 2: Templates y rendering en Vue</a>
+#### Aprendizaje esperado:
+Utilizar la sintaxis de templates de Vuex para el despliegue de valores y variables que den solución a un requerimiento
+
+### Actividad: 
+Para continuar con nuestro aprendizaje con Vue JS, debemos realizar la siguiente aplicación.
+Queremos mostrar una lista de personajes ficticios con un nombre y
+descripción.
+  
+### 🛠️ Requerimientos:
+- Utilizar Vue y sus directivas
+- Crear una estructura Vue
+- Usar un arreglo que recorra (nombre, descripción)
+- Los datos deberan estar definidos en un objeto
+
+----
+
+<a name="actividad3">
+
+## Actividad Práctica 3: Binding de Formularios</a>
+#### Aprendizaje esperado:
+Implementar un formulario de datos interactivo utilizando form binding de Vue para dar solución a un requerimiento.
+
+### Actividad: 
+Veremos cómo administrar en Vue un conjunto de controles input (radio) para identificar la opción seleccionada.
+Para trabajar un conjunto de controles radio debemos definir en el modelo de datos una única propiedad que almacenará el valor de la seleccionada.
+Es importante decir que debemos fijar en el modelo cuál es la que se
+encuentra seleccionada inicialmente, no rescata los valores iniciales
+definidos en un control como podría ser:
+
+```
+<input checked type="radio" value="universitarios" v-model="estudios" id="universitarios">
+```
+
+Luego deberíamos iniciar el modelo: `estudios: 'universitarios'`
+
+### 🛠️ Requerimientos:
+- Crear 4 controles de tipo radio que permitan seleccionar que tipo de estudios tiene el visitante.
+- Mostrar en la parte inferior cuañ se encuentra actualmente seleccionado
+- Mostrar en un control tipo 'select' los días de la semana. Cuando el operador lo selecciona debe mostrar cuál seleccionó.
+
+----
+
+<a name="actividad4">
+
+## Actividad Práctica 4: Manejo de Eventos en VUE</a>
+#### Aprendizaje esperado:
+Implementar interacción en los elementos de una interfaz web utilizando manejo de eventos Vue para dar solución a un requerimiento.
+
+### Actividad: 
+El ejercicio consiste en hacer una lista de pokemones, con un buscador.
+La data que necesita la aplicación debe ser extraída de:
+
+````
+[
+  {
+    "pokemones":[
+      {
+        "id": "1",
+        "nombre": "pikachu"
+      },
+      {
+        "id": "2",
+        "nombre": "kakuna"
+      },
+      {
+        "id": "3",
+        "nombre": "beedrill"
+      },
+      {
+        "id": "4",
+        "nombre": "metapod"
+      },
+      {
+        "id": "5",
+        "nombre": "rattata"    
+      }
+    ]
+  }
+]
+````
+
+### 🛠️ Requerimientos:
+- Mostrar en pantalla un input para buscar un pokémon por su nombre, y una lista de pokemones que viene de la data anteriormente mencionada
+- Crear un proyecto vue.js
+- Usar métodos para validar formularios
+- Usar Bootstrap
+- Si no existen pokemones según la búsqueda, mostrar un mensaje "El pokémon que desea buscar no existe"
 
 ----
 #### Creado por
